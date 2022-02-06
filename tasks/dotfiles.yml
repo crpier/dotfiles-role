@@ -30,17 +30,17 @@
       cmd: "{{ home }}/.dotfiles/deploy.sh"
       chdir: "{{ home }}/.dotfiles"
 
-- name: Private dotfiles
-  when: private_dotfiles_url =! None
-  block:
-  - name: Clone the dotfiles repo
-    git:
-      repo: "{{ private_dotfiles_url }}"
-      dest: "{{ home }}/.private_dotfiles"
-      update: true
+# - name: Private dotfiles
+#   when: private_dotfiles_url =! None
+#   block:
+#   - name: Clone the dotfiles repo
+#     git:
+#       repo: "{{ private_dotfiles_url }}"
+#       dest: "{{ home }}/.private_dotfiles"
+#       update: true
 
-  - name: Deploy the dotfiles
-    shell:
-      cmd: "{{ home }}/.private_dotfiles/deploy.sh"
-      chdir: "{{ home }}/.private_dotfiles"
+#   - name: Deploy the dotfiles
+#     shell:
+#       cmd: "{{ home }}/.private_dotfiles/deploy.sh"
+#       chdir: "{{ home }}/.private_dotfiles"
 

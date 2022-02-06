@@ -40,7 +40,6 @@
       file:
         path: "{{ home }}/.vim/autoload"
         state: directory
-      get_url:
 
 - name: Neovim
   block:
