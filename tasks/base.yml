@@ -1,4 +1,7 @@
 ---
+- name: Gather facts and stuff
+  setup:
+
 - name: Create home folder structure
   file:
     path: "{{ home }}/{{ item }}"

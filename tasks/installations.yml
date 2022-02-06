@@ -1,13 +1,13 @@
 ---
 - name: Install necessary packages
-  pacman:
-    name: "{{ mandatory_packages }}"
+  package:
+    name: "{{ mandatory_packages[ansible_os_family] }}"
   become: true
 
-- name: Install optional packages
-  pacman:
-    name: "{{ optional_packages }}"
-  become: true
+# - name: Install optional packages
+#   package:
+#     name: "{{ optional_packages[ansible_facts[ansible_os_family]] }}"
+#   become: true
 
 - name: Install necessary pip packages
   pip:
