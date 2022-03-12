@@ -1,5 +1,6 @@
 # IMPORTANT
-Only for arch-based distros for now 😔
+Works only on arch-based and debian-based distros.
+Tested on Manjaro in February 2021 and Debian11
 
 Role Name
 =========
