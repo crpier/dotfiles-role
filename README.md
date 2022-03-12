@@ -41,4 +41,6 @@ Author Information
 An optional section for the role authors to include contact information, or a website (HTML is not allowed).
 
 ### TODO
-- verify github host key somehow
+- verify github host key
+- ensure virtualenv can be accessed
+  - seems like it is installed in ~/.local/bin and cannot be used from there (maybe specify that as the executable? 🤔)
